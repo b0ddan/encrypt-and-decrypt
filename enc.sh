@@ -18,3 +18,4 @@ echo "$TEXT" > $FNAME
 cat $FNAME | openssl enc -aes-256-cbc -salt -in $FNAME -out $FNAME.enc
 ret=$?
 rm $FNAME
+echo "Krypterade filen till $FNAME.enc" 
